@@ -3,7 +3,7 @@ import Items
 
 app = Flask(__name__)
 
-@app.route('/')
+@app.route('/Index')
 def getItems():
     items = " ".join(Items.randomizeItems())
     return items
